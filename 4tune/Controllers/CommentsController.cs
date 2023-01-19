@@ -12,7 +12,7 @@ namespace _4tune.Controllers
         [HttpGet]
         public ActionResult GetAll()
         {
-            var data = GetYouTubeData.GetComments();
+            var data = GetYouTubeData.GetFromFewPages();
             return Ok(data);
         }
 
